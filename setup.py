@@ -9,7 +9,7 @@ with open(join(dirname(__file__), 'README.rst')) as readme:
 # allow setup.py to be run from any path
 chdir(normpath(abspath(dirname(__file__))))
 
-import svg
+import svg  # noqa
 
 setup(
     name='django-svg',
