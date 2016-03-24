@@ -12,7 +12,7 @@ chdir(normpath(abspath(dirname(__file__))))
 import svg  # noqa
 
 setup(
-    name='django-svg',
+    name='django-inline-svg',
     version=svg.__version__,
     packages=find_packages(exclude=['test*']),
     include_package_data=True,

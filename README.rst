@@ -1,2 +1,2 @@
-django-svg
-=========
+django-inline-svg
+=================
