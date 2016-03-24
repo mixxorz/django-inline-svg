@@ -19,7 +19,7 @@ setup(
     license=svg.__license__,
     description=svg.__doc__,
     long_description=README,
-    url='https://github.com/mixxorz/django-svg',
+    url='https://github.com/mixxorz/django-inline-svg',
     author='Mitchel Cabuloy',
     author_email='mixxorz@gmail.com',
     maintainer='Mitchel Cabuloy',
