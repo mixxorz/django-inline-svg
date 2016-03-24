@@ -63,7 +63,7 @@ MIT
    :target: https://pypi.python.org/pypi/django-inline-svg/
    :alt: Latest version
 .. |build-status| image:: https://img.shields.io/travis/mixxorz/django-inline-svg/master.svg
-   :target: https://travis-ci.org/mixxorz/django-inlin-svg
+   :target: https://travis-ci.org/mixxorz/django-inline-svg
    :alt: Build status
 .. |monthly-downloads| image:: https://img.shields.io/pypi/dm/django-inline-svg.svg
    :target: https://pypi.python.org/pypi/django-inline-svg/
