@@ -3,8 +3,8 @@ django-inline-svg |latest-version|
 
 |build-status| |monthly-downloads| |software-license|
 
-A simple plugin that adds an ``svg`` template tag to inline your SVGs in
-your Django templates
+A simple plugin that adds an ``svg`` template tag to inline your SVGs in your
+Django templates.
 
 Installation
 ------------
@@ -28,8 +28,8 @@ Add ``svg`` to your ``INSTALLED_APPS``.
 Usage
 -----
 
-Store your SVGs in folder named ``svg`` folder at the root of any of
-your static file directories.
+Store your SVGs in folder named ``svg`` at the root of any of your static file
+directories.
 
 ::
 
