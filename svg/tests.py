@@ -1,5 +1,6 @@
 import os
 from django.conf import settings
+from django.core.exceptions import ImproperlyConfigured
 from django.template import Context, Template
 from django.test.testcases import SimpleTestCase
 
@@ -27,4 +28,30 @@ class SVGTemplateTagTest(SimpleTestCase):
 
         with self.settings(DEBUG=True):
             with self.assertRaises(SVGNotFound):
+                template.render(Context())
+
+    def test_should_load_svg_from_custom_directory(self):
+        with self.settings(SVG_DIRS=[os.path.join(settings.BASE_DIR,
+                                                  'static', 'custom-dir')]):
+            svg_file = open(os.path.join(settings.BASE_DIR,
+                                         'static',
+                                         'custom-dir',
+                                         'other.svg')).read()
+            template = Template("{% load svg %}{% svg 'other' %}")
+
+            self.assertEqual(svg_file, template.render(Context()))
+
+    def test_when_given_invalid_file_and_using_custom_directory_it_should_fail(self):  # noqa
+        with self.settings(SVG_DIRS=[os.path.join(settings.BASE_DIR,
+                                                  'static', 'custom-dir')]):
+            template = Template("{% load svg %}{% svg 'nonexistent' %}")
+
+            self.assertEqual('', template.render(Context()))
+
+    def test_when_SVG_DIRS_isnt_a_list_it_should_raise_an_error(self):
+        with self.settings(SVG_DIRS=os.path.join(settings.BASE_DIR,
+                                                 'static', 'custom-dir')):
+            template = Template("{% load svg %}{% svg 'other' %}")
+
+            with self.assertRaises(ImproperlyConfigured):
                 template.render(Context())

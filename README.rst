@@ -48,11 +48,20 @@ Use the ``svg`` template tag.
 
     <h1 class="logo">{% svg 'logo' %}</h1>
 
+You can set ``SVG_DIRS`` to control where to look for your svgs.
+
+::
+
+    # settings.py
+
+    SVG_DIRS=[
+        os.path.join(BASE_DIR, 'my-svgs')
+    ]
+
 Support
 -------
 
-The tests are run against Django 1.8, 1.9, and Python 2.7, 3.3, 3.4,
-3.5.
+The tests are run against Django 1.8, 1.9, 1.10 on Python 2.7, 3.3, 3.4, 3.5.
 
 License
 -------
