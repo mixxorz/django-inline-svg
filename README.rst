@@ -1,10 +1,13 @@
 django-inline-svg |latest-version|
 ==================================
 
-|build-status| |monthly-downloads| |software-license|
+|build-status| |software-license|
 
 A simple plugin that adds an ``svg`` template tag to inline your SVGs in your
 Django templates.
+
+Update 2018: This library still works. Not a lot of work needs to be done to it.
+¯\_(ツ)_/¯
 
 Installation
 ------------
@@ -74,9 +77,6 @@ MIT
 .. |build-status| image:: https://img.shields.io/travis/mixxorz/django-inline-svg/master.svg
    :target: https://travis-ci.org/mixxorz/django-inline-svg
    :alt: Build status
-.. |monthly-downloads| image:: https://img.shields.io/pypi/dm/django-inline-svg.svg
-   :target: https://pypi.python.org/pypi/django-inline-svg/
-   :alt: Monthly downloads
 .. |software-license| image:: https://img.shields.io/pypi/l/django-inline-svg.svg
    :target: https://github.com/mixxorz/django-inline-svg/blob/master/LICENSE
    :alt: Software license
