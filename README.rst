@@ -64,7 +64,7 @@ You can set ``SVG_DIRS`` to control where to look for your svgs.
 Support
 -------
 
-The tests are run against Django 1.8, 1.9, 1.10 on Python 2.7, 3.3, 3.4, 3.5.
+The tests are run against Django 1.8 to 2.0 on Python 2.7, 3.4, 3.5, 3.6.
 
 License
 -------
