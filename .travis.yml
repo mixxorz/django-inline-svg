@@ -1,9 +1,12 @@
 language: python
-python: 3.5
+python:
+  - 2.7
+  - 3.4
+  - 3.5
+  - 3.6
 env:
   - TOXENV=flake8
   - TOXENV=py27-django18
-  - TOXENV=py33-django18
   - TOXENV=py34-django18
   - TOXENV=py35-django18
   - TOXENV=py27-django19
@@ -12,6 +15,13 @@ env:
   - TOXENV=py27-django110
   - TOXENV=py34-django110
   - TOXENV=py35-django110
+  - TOXENV=py27-django111
+  - TOXENV=py34-django111
+  - TOXENV=py35-django111
+  - TOXENV=py36-django111
+  - TOXENV=py34-django20
+  - TOXENV=py35-django20
+  - TOXENV=py36-django20
 install:
   - pip install tox
 script: tox
